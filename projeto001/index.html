@@ -3,87 +3,70 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="stylesheet" href="estilos/style.css" />
   </head>
   <body>
     <header><h1>Cadastre-se no site.</h1></header>
     <main>
-      <p>
+      <h2>Criar Conta</h2>
+      <div class="input-container">
         <!-- Nome -->
-        <label for="nome"
-          ><input 
-          type="text" 
-          name="nome" 
-          id="nome" 
-          placeholder="Nome Completo"
-        /></label>
-      </p>
+        <i class="fa-solid fa-user"></i>
+        <label for="nome"><input type="text" name="nome" id="nome" placeholder="Nome Completo" /></label>
+      </div>
       <span id="avisoNome"></span>
-      <p>
+      <div class="input-container">
         <!-- CPF -->
-        <label for="cpf"
-          ><input 
-          type="text" 
-          name="cpf" 
-          id="cpf" 
-          placeholder="CPF"
-        /></label>
-      </p>
+        <i class="fa-solid fa-id-card"></i>
+        <input type="text" name="cpf" id="cpf" placeholder="CPF" />
+      </div>
       <span id="avisoCPF"></span>
-      <p>
+      <div class="input-container">
         <!-- Data de Nascimento -->
-        <label for="data"> 
-        <input 
-        type="date" 
-        name="data" 
-        id="data" 
-        /></label>
-      </p>
+        <i class="fa-solid fa-calendar-days"></i>
+        <input type="date" name="data" id="data" />
+      </div>
       <span id="avisoData"></span>
-      <p>
+      <div class="input-container">
         <!-- Telefone -->
-        <label for="telefone"
-          ><input
-            type="tel"
-            name="telefone"
-            id="telefone"
-            placeholder="Telefone: (12) 3456-789"
-        /></label>
-      </p>
+        <i class="fa-solid fa-phone"></i>
+        <input
+          type="tel"
+          name="telefone"
+          id="telefone"
+          placeholder="Telefone: (12) 3456-789"
+        />
+      </div>
       <span id="avisoTelefone"></span>
-      <p>
+      <div class="input-container">
         <!-- E-mail -->
-        <label for="email"
-          ><input 
-          type="text" 
-          name="email" 
-          id="email" 
-          placeholder="E-mail"
-        /></label>
-      </p>
+        <i class="fa-solid fa-envelope"></i>
+        <input type="text" name="email" id="email" placeholder="E-mail" />
+      </div>
       <span id="avisoEmail"></span>
-      <p>
+      <div class="input-container">
         <!-- Senha -->
-        <label for="senha"
-          ><input
-            type="password"
-            name="senha"
-            id="senha"
-            placeholder="Criar Senha"
-        /></label>
-      </p>
+        <i class="fa-solid fa-lock"></i>
+        <input
+          type="password"
+          name="senha"
+          id="senha"
+          placeholder="Criar Senha"
+        />
+      </div>
       <span id="avisoSenha"></span>
-      <p>
+      <div class="input-container">
         <!-- Confirmar Senha -->
-        <label for="cSenha"
-          ><input
-            type="password"
-            name="confirmarSenha"
-            id="cSenha"
-            placeholder="Confirmar Senha"
-        /></label>
-      </p>
+        <i class="fa-solid fa-lock"></i>
+        <input
+          type="password"
+          name="confirmarSenha"
+          id="cSenha"
+          placeholder="Confirmar Senha"
+        />
+      </div>
       <span id="avisoCsenha"></span>
       <p class="botaop">
         <!-- Botão de Cadastro -->
