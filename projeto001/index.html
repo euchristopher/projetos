@@ -1,15 +1,103 @@
-<!DOCTYPE html><html lang="pt-bt">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body{
-            padding: 5px;
-        }
-    </style>
-</head>
-<body>
-    <h1>Lorem dolor sit amet consectetur adipisicing elit. Fuga, esse. Doloribus aspernatur harum animi. Eveniet voluptatum quam, vero unde quia repudiandae officiis amet, expedita repellat accusantium optio ratione, suscipit sapiente!</h1>
-</body>
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="estilos/style.css" />
+  </head>
+  <body>
+    <header><h1>Cadastre-se no site.</h1></header>
+    <main>
+      <p>
+        <!-- Nome -->
+        <label for="nome"
+          ><input 
+          type="text" 
+          name="nome" 
+          id="nome" 
+          placeholder="Nome Completo"
+        /></label>
+      </p>
+      <span id="avisoNome"></span>
+      <p>
+        <!-- CPF -->
+        <label for="cpf"
+          ><input 
+          type="text" 
+          name="cpf" 
+          id="cpf" 
+          placeholder="CPF"
+        /></label>
+      </p>
+      <span id="avisoCPF"></span>
+      <p>
+        <!-- Data de Nascimento -->
+        <label for="data"> 
+        <input 
+        type="date" 
+        name="data" 
+        id="data" 
+        /></label>
+      </p>
+      <span id="avisoData"></span>
+      <p>
+        <!-- Telefone -->
+        <label for="telefone"
+          ><input
+            type="tel"
+            name="telefone"
+            id="telefone"
+            placeholder="Telefone: (12) 3456-789"
+        /></label>
+      </p>
+      <span id="avisoTelefone"></span>
+      <p>
+        <!-- E-mail -->
+        <label for="email"
+          ><input 
+          type="text" 
+          name="email" 
+          id="email" 
+          placeholder="E-mail"
+        /></label>
+      </p>
+      <span id="avisoEmail"></span>
+      <p>
+        <!-- Senha -->
+        <label for="senha"
+          ><input
+            type="password"
+            name="senha"
+            id="senha"
+            placeholder="Criar Senha"
+        /></label>
+      </p>
+      <span id="avisoSenha"></span>
+      <p>
+        <!-- Confirmar Senha -->
+        <label for="cSenha"
+          ><input
+            type="password"
+            name="confirmarSenha"
+            id="cSenha"
+            placeholder="Confirmar Senha"
+        /></label>
+      </p>
+      <span id="avisoCsenha"></span>
+      <p class="botaop">
+        <!-- Botão de Cadastro -->
+        <input
+          type="button"
+          value="Cadastre-se"
+          class="botao"
+          onclick="criar()"
+        />
+      </p>
+      <!-- Mensagem de confirmação -->
+      <span id="contaCriada"></span>
+    </main>
+    <!-- Scripts -->
+    <script src="scripts/script.js"></script>
+  </body>
 </html>
