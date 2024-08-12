@@ -42,8 +42,7 @@ function criar() {
 
   // Validação da Data de Nascimento
   if (usuario.data.length === 0) {
-    erro.erroData.innerHTML =
-      "<strong>Preencha o campo Data de Nascimento.</strong>";
+    erro.erroData.innerHTML = "<strong>Preencha o campo Data de Nascimento.</strong>";
     formIsValid = false;
   } else {
     const dataAtual = new Date();
@@ -51,10 +50,7 @@ function criar() {
     let idade = dataAtual.getFullYear() - dataNascimento.getFullYear();
     const mes = dataAtual.getMonth() - dataNascimento.getMonth();
 
-    if (
-      mes < 0 ||
-      (mes === 0 && dataAtual.getDate() < dataNascimento.getDate())
-    ) {
+    if (mes < 0 || (mes === 0 && dataAtual.getDate() < dataNascimento.getDate())) {
       idade--;
     }
 
@@ -93,7 +89,8 @@ function criar() {
     formIsValid = false;
   }
   if (usuario.senha.length < 8) {
-    erro.erroSenha.innerHTML = "<strong>A senha precisa ter no mínimo 8 caracteres.</strong";
+    erro.erroSenha.innerHTML =
+      "<strong>A senha precisa ter no mínimo 8 caracteres.</strong";
     formIsValid = false;
   } else {
     erro.erroSenha.innerHTML = "";
