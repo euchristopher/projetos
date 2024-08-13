@@ -1,3 +1,7 @@
+/* function mostrarSenha(){
+  const senha = document.getElementById("senha");
+  senha.type = senha.type === "password"? "text" : "password";
+} */
 function criar() {
   const usuario = {
     nome: document.getElementById("nome").value,
