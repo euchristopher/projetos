@@ -26,10 +26,11 @@ section {
   width: 300px;
   height: 460px; /* Ajusta a altura automaticamente de acordo com o conteúdo */
   border-radius: 10px; /* Opcional: arredonda os cantos do formulário */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.445); /* Opcional: adiciona uma sombra ao redor do formulário */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.521); /* Opcional: adiciona uma sombra ao redor do formulário */
 }
 
 h1{
+  color: white;
   text-align: center;
   font-size: 2em;
   font: bolder;
@@ -37,10 +38,7 @@ h1{
   padding-top: 10px;
 }
 
-input[type="text"],
-input[type="password"],
-input[type="tel"],
-input[type="date"] {
+input{
   width: 100%;
   max-width: 260px;
   padding: 10px 10px 10px 40px; /* Adiciona padding à esquerda para acomodar o ícone */
@@ -68,7 +66,6 @@ strong {
 
 p.botaop {
   text-align: center;
-  padding-top: 4px;
 }
 
 .botao {
@@ -78,8 +75,7 @@ p.botaop {
   cursor: pointer;
   display: inline-block;
   text-decoration: none;
-  padding: 10px 20px;
-  margin: 0;
+  padding: 10px 10px;
 }
 
 .formulario, .formFilho {
@@ -127,4 +123,7 @@ p.botaop {
 
 .formulario, .formFilho input {
   padding-left: 40px; /* Espaço para o ícone */
+}
+#contaCriada{
+  color: green;
 }

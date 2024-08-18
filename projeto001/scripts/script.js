@@ -1,7 +1,11 @@
-/* function mostrarSenha(){
-  const senha = document.getElementById("senha");
-  senha.type = senha.type === "password"? "text" : "password";
-} */
+const dados = {
+  nome: Bruno,
+  CPF: 12345678901,
+  DataN: "01-01-2000",
+  Telefone: "(11) 99999-9999",
+  Email: "bruno@example.com",
+  Senha: "senha123",
+}
 function criar() {
   const usuario = {
     nome: document.getElementById("nome").value,
@@ -56,11 +60,9 @@ function criar() {
 
     if (mes < 0 || (mes === 0 && dataAtual.getDate() < dataNascimento.getDate())) {
       idade--;
-    }
-
+    } 
     if (idade < 18) {
-      erro.erroData.innerHTML =
-        "<strong>Você precisa ter no mínimo 18 anos para criar uma conta.</strong>";
+      erro.erroData.innerHTML = "<strong>Você precisa ter no mínimo 18 anos para criar uma conta.</strong>";
       formIsValid = false;
     } else {
       erro.erroData.innerHTML = "";
@@ -72,8 +74,7 @@ function criar() {
     erro.erroTel.innerHTML = "<strong>Preencha o campo Telefone.</strong>";
     formIsValid = false;
   } else if (usuario.telefone.length < 10) {
-    erro.erroTel.innerHTML =
-      "<strong>O telefone precisa ter 10 dígitos.</strong>";
+    erro.erroTel.innerHTML = "<strong>O telefone precisa ter 10 dígitos.</strong>";
     formIsValid = false;
   } else {
     erro.erroTel.innerHTML = "";
@@ -93,8 +94,7 @@ function criar() {
     formIsValid = false;
   }
   if (usuario.senha.length < 8) {
-    erro.erroSenha.innerHTML =
-      "<strong>A senha precisa ter no mínimo 8 caracteres.</strong";
+    erro.erroSenha.innerHTML = "<strong>A senha precisa ter no mínimo 8 caracteres.</strong";
     formIsValid = false;
   } else {
     erro.erroSenha.innerHTML = "";
@@ -102,8 +102,7 @@ function criar() {
 
   // Validação da Confirmação de Senha
   if (usuario.confirmarSenha.length === 0) {
-    erro.erroCsenha.innerHTML =
-      "<strong>Preencha o campo Confirmar Senha.</strong>";
+    erro.erroCsenha.innerHTML = "<strong>Preencha o campo Confirmar Senha.</strong>";
     formIsValid = false;
   } else if (usuario.senha !== usuario.confirmarSenha) {
     erro.erroCsenha.innerHTML = "<strong>As senhas não coincidem.</strong>";
