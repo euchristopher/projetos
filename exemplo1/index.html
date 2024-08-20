@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Armazém de Números</title>
+  </head>
+  <body>
+    <header><h1>Armazenador de números</h1></header>
+    <section>
+      <div container-filho2>
+        <p>
+          Digite um número de 1 até 100:
+          <input type="number" id="inum" name="numero" />
+          <input type="button" id="adicionar" value="Adicionar" onclick="adicionar()" />
+        </p>
+      </div>
+      <div id="container-filho2">
+        <select name="lista" id="ilista" size="10"></select
+        ><br />
+        <p><input type="button" value="Finalizar" onclick="finalizar()" id="finalizar" /></p>
+      </div>
+      <div id="res"></div>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>

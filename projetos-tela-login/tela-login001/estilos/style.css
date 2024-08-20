@@ -1,23 +1,23 @@
 @charset "UTF-8";
 * {
-  font: normal arial;
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
 }
 
-html, body {
+html,
+body {
   background: linear-gradient(to bottom right, #3a7bd5, #00d2ff);
-  height: 100%;
+  height: 100vh;
   overflow: hidden; /* Impede o aparecimento de scrollbars */
 }
 
 main {
   height: 100%;
-  padding-bottom: 50px;
   display: flex;
   justify-content: center; /* Centraliza horizontalmente */
   align-items: center; /* Centraliza verticalmente */
+  padding-bottom: 100px;
 }
 
 section {
@@ -29,33 +29,61 @@ section {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.521); /* Opcional: adiciona uma sombra ao redor do formulário */
 }
 
-h1{
+#msg-hora {
   color: white;
-  text-align: center;
-  font-size: 2em;
-  font: bolder;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  padding-top: 10px;
+  font-size: 18px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-input{
+h2 > i#icone-hora {
+  font-size: 24px;
+  vertical-align: middle;
+  color: #ffa500;
+  padding-left: 5px;
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 2.5em;
+  font: bolder;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+#hora {
+  display: flex;
+  align-items: center;
+}
+
+#icone-hora {
+  margin-right: 10px;
+  font-size: 1.5em;
+}
+
+input {
   width: 100%;
   max-width: 260px;
   padding: 10px 10px 10px 40px; /* Adiciona padding à esquerda para acomodar o ícone */
   border: 1px solid #ccc;
   border-radius: 6px;
   box-sizing: border-box;
+  outline: 0/*  */;
 }
 
 input:hover {
-  background-color: #00d0ff98;
+  background-color: #00d2ff;
 }
 
 span {
   font-family: Arial, Helvetica, sans-serif;
   color: red;
   font-weight: bolder;
-  font-size: 11.5px;
+  font-size: 0.7em;
   padding: 1px;
 }
 
@@ -66,6 +94,9 @@ strong {
 
 p.botaop {
   text-align: center;
+  padding-top: 5px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .botao {
@@ -78,7 +109,12 @@ p.botaop {
   padding: 10px 10px;
 }
 
-.formulario, .formFilho {
+.botao:hover {
+  background-color: #2ecc71;
+}
+
+.formulario,
+.formFilho {
   text-align: center;
   position: relative; /* Necessário para que o ícone seja posicionado relativamente ao seu contêiner */
 }
@@ -86,44 +122,28 @@ p.botaop {
 .formFilho i {
   position: absolute;
   top: 50%;
-  left: 10px; /* Posição do ícone */
+  left: 10px; /* Posição do ícone à esquerda */
   transform: translateY(-50%);
   color: #000000;
-}
-
-.formFilho {
-  position: relative;
-  text-align: center;
-}
-
-.formFilho i.fa-lock {
-  position: absolute;
-  top: 50%;
-  left: 10px;
-  transform: translateY(-50%);
 }
 
 .formFilho input[type="password"] {
   width: 100%;
   max-width: 260px;
-  padding: 10px 10px 10px 40px;
+  padding: 10px 40px 10px 40px; /* Ajusta o padding para criar espaço à direita para o ícone */
+  padding-right: 40px;
   border: 1px solid #ccc;
   border-radius: 6px;
   box-sizing: border-box;
 }
 
-.formFilho i#senhai {
-  position: absolute;
-  top: 50%;
-  right: -213px;
-  transform: translateY(-50%);
+i#verSenha, i#vercSenha {
+  font-size: 18px;
+  vertical-align: middle;
+  margin-left: 220px;
   cursor: pointer;
-  color: #000000;
 }
 
-.formulario, .formFilho input {
-  padding-left: 40px; /* Espaço para o ícone */
-}
-#contaCriada{
+#contaCriada {
   color: green;
 }
