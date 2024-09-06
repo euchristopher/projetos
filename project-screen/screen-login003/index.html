@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Screen Login 002</title>
+</head>
+<body>
+  <header><h1>Welcome to our Website!</h1></header>
+  <div class="main-login">
+    <div class="login-section">
+      <div class="left-login">
+        <div class="card-login">
+          <h2>Create Account</h2>
+        </div>
+        <div class="textfield">
+          <label for="username">Username</label>
+          <input type="text" id="usernametxt" placeholder="Username">
+        </div>
+        <div class="textfield">
+          <label for="password">Password</label>
+          <input type="password" id="create-password" placeholder="Password" minlength="8" maxlength="16">
+            <i class="fas fa-eye" id="icon-create-password" onclick="clickPassword('create-password', 'icon-create-password')"></i>
+        </div>
+        <div class="btn"><button class="button" 
+          onclick="clickCreate()">Create</button></div>
+        </div>
+      </div>
+      <div class="login-section">
+        <div class="right-login">
+          <div class="card-login">
+            <h2>Already have an account?</h2>
+          </div>
+          <div class="textfield">
+            <label for="username">Username</label>
+            <input type="text" id="usernametxt2" placeholder="Username">
+          </div>
+          <div class="textfield">
+            <label for="password">Password</label>
+            <input type="password" id="login-password" placeholder="Password" minlength="8" maxlength="16">
+            <i class="fas fa-eye" id="icon-login-password" onclick="clickPassword('login-password', 'icon-login-password')"></i>
+          </div>
+          <div class="btn"><button class="button" 
+            onclick="clickLogin()">Login</button></div>
+          </div>
+        </div>
+      </div>
+      <script src="script.js"></script>
+    </body>
+    </html>
