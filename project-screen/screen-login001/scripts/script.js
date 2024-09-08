@@ -15,13 +15,13 @@ function inLista(l) {
   }
 }
 function horario() {
-  const horaAtual = document.querySelector("h2#hora");
+  /* const horaAtual = document.querySelector("h2#hora");
+     const minuto = dataAtual.getMinutes();
+   */
   const iconeHora = document.querySelector("i#icone-hora");
   const msgHora = document.querySelector("span#msg-hora");
-
   const dataAtual = new Date();
   const horas = dataAtual.getHours();
-  const minutos = dataAtual.getMinutes();
 
   if (horas >= 0 && horas < 6) {
     iconeHora.className = "fa-solid fa-moon";
