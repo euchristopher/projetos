@@ -1,0 +1,76 @@
+/* Estilos globais */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo para o container principal dentro do body */
+.container {
+  display: flex;
+  flex-direction: column; /* Alinha os itens verticalmente */
+  width: 80%;
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Alinhamento do título no container */
+.container h1 {
+  text-align: center;
+  color: #007bff;
+  margin-bottom: 1rem;
+}
+
+/* Estilo para inputs e botões dentro do container */
+input,
+button {
+  display: block;
+  width: calc(100% - 2rem);
+  padding: 0.75rem;
+  margin: 0.5rem auto 1rem auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input {
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+      -webkit-appearance: none; /* Remove as setas no Chrome, Safari */
+      margin: 0;
+    }
+  }
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  
+  &:hover {
+    background-color: #0056b3;
+  }
+  
+  &:focus {
+    outline: none;
+  }
+}
+
+/* Estilo para o resultado dentro do container */
+.res {
+  display: block;
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background-color: #e9ecef;
+  border-radius: 4px;
+  color: #333;
+  font-size: 1rem;
+}

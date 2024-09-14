@@ -1,17 +1,11 @@
-// script.js
-
 // Armazena o número atualmente sendo digitado ou exibido na tela
 let currentInput = "0";
-
 // Armazena o número anterior ou o resultado da operação
 let previousInput = "";
-
 // Armazena o operador selecionado (+, -, x, ÷)
 let operator = null;
-
 // Seleciona a tela da calculadora
 const screen = document.querySelector(".screen");
-
 // Função para lidar com o clique em um botão
 function handleButtonClick(value) {
     if (value === "C") {
